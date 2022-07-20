@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scorcesHome.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <section>
+        <div id="container">
+
+        </div>
+    </section>
+    <footer>
+        <div>Terms of Use
+            |
+            Privacy Policy
+            |
+            Interest-Based Ads
+            |
+            Addendum to the Global Privacy Policy
+            |
+            Feedback</div>
+            <div>© 2022 ESPN Sports Media Ltd. All rights reserved</div>
+    </footer>
+</body>
+</html>
+<script>
+    const axios = require("axios");
+
+const options = {
+  method: 'GET',
+  url: 'https://cricket-live-data.p.rapidapi.com/series',
+  headers: {
+    'X-RapidAPI-Key': '221a1c630cmsh413a3975f636b48p199ddcjsnc5aff3a30041',
+    'X-RapidAPI-Host': 'cricket-live-data.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+/*
+    function append(data){
+        console.log(data);
+        /*
+        let section=document.querySelector("#container")
+        let div=document.createElement("div")
+        let h=document.createElement("h2")
+
+        let div1=document.createElement("div").setAttribute("id","box")
+
+        let h1=document.createElement("h3")
+
+        let h2=document.createElement("h3")
+
+        let p1=document.createElement("p")
+
+        let p2=document.createElement("p")
+
+        div1.append(h1,h2,p1,p2)
+
+        let p3=document.createElement("p")
+
+        div.append(h,div1,p3)
+        section.append(div)
+        
+
+    }
+    */
+</script>
