@@ -1,0 +1,146 @@
+
+        *{
+            box-sizing: border-box;
+            font-family: 'Noto Sans', sans-serif;
+        }
+     body{
+         font-family: sans-serif;
+         background-color: whitesmoke;
+     }
+     #container{
+         width: 80%;
+        margin: auto;
+        border-bottom: 4px solid rgb(201, 199, 199);
+     }
+     #top{
+         background-color: #009270;
+         text-align: center;
+         height: 3.5rem;
+         border-bottom: 2px solid #02795d;
+     }
+     #top>#up>li>a{
+         text-decoration: none;
+         color: white;
+         font-size: 13px;
+        align-items: center;
+        margin: 0px;
+        padding: 19px 6px;
+     }
+     #top>#up>li ul a{
+      text-decoration: none;
+      color:black;
+     }
+     #signup:hover{
+         background-color: #009270 ;
+     }
+     #top a:hover{
+         background-color: #00775b ;
+     }
+     #dropDownBox>li>a:hover{
+      background-color:transparent;
+     }
+     
+     #top ul{
+         display: flex;
+         justify-content: space-around;
+         list-style: none;
+         color: white;
+         margin: auto;
+         text-decoration: none;
+        align-items: center;
+        height: 56px;
+     }
+     #top img{
+        width: 100px;
+        height: 50px;
+        padding: 0px;
+        margin-top: 4px;
+        margin-left: -30px;
+        margin-right: 20px;
+     }
+     #top img:hover, #top button:hover{
+         cursor: pointer;
+     }
+     #top button{
+         padding: 10px;
+         width: 140px;
+         border: none;
+         background-color: white;
+         color: gray;
+         border-radius: 20px;
+         font-size: 14px;
+     }
+     #signup{
+         font-size: 20px;
+     }
+     #signup:hover{
+         cursor: pointer;
+     }
+     #search{
+         font-size: 15px;
+         opacity: 80%;
+         margin-left: 10px;
+     }
+     #search:hover{
+        background-color: #009270 ;
+        cursor: pointer;
+     }
+     .dropDown{
+         display: none;
+         font-size: 13px;
+     }
+     
+     #top ul li:hover .dropDown{
+        display: flex;
+         position: absolute;
+         background-color: white;
+         margin-top: 20px;
+         margin-left: 0px;
+        justify-content: space-around;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+     }
+     #top ul li:hover .dropDown ul{
+         display: block;
+         margin: 0px;
+         height: 100%;
+         width: 140%;
+         text-align: left;
+         padding: 0px;
+     }
+     #top ul li:hover .dropDown ul li{
+         width: 100%;
+         background: transparent;
+         color: black;
+         padding: 10px ;
+     }
+     #top ul li:hover .dropDown ul li:hover{
+         background-color:  #eeeeee;
+         cursor: pointer;
+     }
+    #bottom{
+      display:flex;
+      width:100%;
+    background-color: #4a4a4a;
+      font-size: 13px;
+      justify-content: space-between;
+      align-content: center;
+      
+    }
+    #bottom>div:first-child{
+      width:80%;
+      display: flex;
+      justify-content: space-evenly;
+      
+    }
+    #bottom>div:last-child{
+      display: flex;
+      justify-content: space-between;
+    }
+    #bottom>div:first-child>a,#bottom>div:last-child>a{
+      color:white;
+      text-decoration: none;
+      padding:10px;
+    }
+    #bottom>div:first-child>a:hover,#bottom>div:last-child>a:hover{
+      background-color: #333333;
+    }
