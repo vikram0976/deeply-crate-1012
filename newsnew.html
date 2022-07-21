@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          <div id="container"></div>
+    
+</body>
+</html>
+<script>
+    // fetch("https://newsapi.org/v2/everything?q=tesla&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d")
+	// .then(result => result.json())
+	// .then(result => {
+	// 	console.log("We have the result",result);
+	// })
+	// .catch(err => {
+	// 	console.log("An error occured. Please check your code",err);
+	// });
+
+    let getData = async function(query) {
+    let url = "https://newsapi.org/v2/everything?q=cricket&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d"
+     
+    let res = await fetch(url);
+    let data = await res.json();
+    console.log(data)
+    append(data.articles)
+};
+getData()
+
+
+   function append(data){
+    let container = document.getElementById("container")
+    // container.innerHTML = null;
+
+    data.forEach((el) => {
+
+        let img = document.createElement("img");
+        img.src = el.urlToImage
+
+        let h3 = document.createElement("h3")
+        h3.innerText = el.description
+
+        let h2 = document.createElement("h2");
+        h2.innerText = el.content
+        let h1 = document.createElement("h1");
+        h1.innerText = el.title
+        
+        let div = document.createElement("div")
+        div.append(img,h3,h2,h1)
+        container.append(div);        
+    })  
+};
+
+
+</script>
