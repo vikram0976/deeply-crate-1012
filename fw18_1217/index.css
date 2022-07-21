@@ -1,0 +1,142 @@
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  background: #c0c0c0 url(https://i.imgci.com/espncricinfo/ciHomepage_page_topbg1.gif) repeat-x top;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:white;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+      display: block;
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    
+    color:#439ec9;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    font-size: 20px;
+    color: #439ec9;
+  }
+  
+  #advt{
+      
+      height: 30%;
+      width: 80%;
+      margin: auto;
+  }
+  #container{
+    display: flex;
+    width :80%;
+    gap:5%;
+    margin:auto;
+    color:#035BAC;
+}
+u {    
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+  color:#035BAC;
+}
+  #main{
+    
+    width:40%;
+  }
+  #boxes2{
+    display:flex;
+    
+  }
+  #main>div{
+    
+    gap:20px;
+  }
+  #main2{
+    display:block;
+  }
+ 
+  #box1,#box2,#sidebox{
+     border:1px solid grey;
+     width: 50%;
+      font-size: 12px;
+      font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
+      margin-top: 10px;
+      border-radius: 5px;
+      line-height: 10px;
+      background: white;
+      
+  }
+  #sidebox{
+      border: 1px solid grey;
+      height: 700px;
+      width: 30%;
+      border-radius: 5px;
+      
+  }
+  
+ #box3{
+  border:1px solid grey;
+  font-size: 12px;
+  height: 1610px;
+  margin-top: 10px;
+      font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
+      border-radius: 10px;
+      background: white;
+      
+ }
+ img{
+  margin-top: 10px;
+ }
+ #advt > img{
+  width: 100%;
+ }
+ #side{
+  border:1px solid grey;
+  height: 700px;
+  margin-top: 10px;
+      font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
+      border-radius: 5px;
+      background: white;
+ }
+ p{
+  font-size: 11px;
+ }
+ #form{
+  display: flex;
+  width: 50%;
+  height: 20px;
+ }
+ .btn{
+  background-color: #035BAC;
+    color: white;;
+    border: none;
+    border-radius: 2px;
+    height: fit-content;
+  
+ }
+ #footer{
+  border: 1px solid red;
+  width: 800px;
+  height: 50px;
+  color: #363636;
+  font-size: 11px;
+  margin-right: 1500px;
+  
+
+ }
