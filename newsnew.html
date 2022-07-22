@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            padding: 10px;
+            /* margin: auto; */
+            margin-top: 100px;
+            margin-right: 10px;
+            justify-content: center;
+        }
+        img{
+            width:100%;
+            height:550px;
+            padding: 10px;
+        }
+        h3{
+            font-size: 26px;
+
+        }
+        p{
+            font-size: 24px;
+            
+        }
+    </style>
 </head>
 <body>
           <div id="container"></div>
@@ -22,7 +49,8 @@
 	// });
 
     let getData = async function(query) {
-    let url = "https://newsapi.org/v2/everything?q=cricket&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d"
+    // let url = "https://newsapi.org/v2/everything?q=cricket&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d"
+    let url = "https://newsapi.org/v2/everything?q=cricket&from=2022-06-22&sortBy=publishedAt&apiKey=443ffdd0373647a9a6d6ab45b37cc485"
      
     let res = await fetch(url);
     let data = await res.json();
@@ -33,25 +61,29 @@ getData()
 
 
    function append(data){
-    let container = document.getElementById("container")
+   
     // container.innerHTML = null;
 
     data.forEach((el) => {
+        console.log(el)
+        let contt = document.getElementById("container")
 
         let img = document.createElement("img");
         img.src = el.urlToImage
+        // let div1 = document.createElement("div")
 
         let h3 = document.createElement("h3")
-        h3.innerText = el.description
+        h3.innerText = el.title
 
-        let h2 = document.createElement("h2");
-        h2.innerText = el.content
-        let h1 = document.createElement("h1");
-        h1.innerText = el.title
+        let h2 = document.createElement("p");
+        h2.innerText = el.description;
+        let h1 = document.createElement("p");
+        h1.innerText = el.content;
         
         let div = document.createElement("div")
+        // div1.append(img)
         div.append(img,h3,h2,h1)
-        container.append(div);        
+        contt.append(div);        
     })  
 };
 
