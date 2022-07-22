@@ -10,6 +10,7 @@ body {
 .topnav {
     background-color:white;
     overflow: hidden;
+
   }
   
   /* Style the links inside the navigation bar */
@@ -20,7 +21,7 @@ body {
     text-align: center;
     padding: 0px 10px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 50px;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -72,7 +73,7 @@ u {
   }
  
   #box1,#box2,#sidebox{
-     border:1px solid grey;
+    border:1px solid rgb(184, 182, 182);
      width: 50%;
       font-size: 12px;
       font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
@@ -83,7 +84,7 @@ u {
       
   }
   #sidebox{
-      border: 1px solid grey;
+    border:1px solid rgb(184, 182, 182);
       height: 700px;
       width: 30%;
       border-radius: 5px;
@@ -91,7 +92,7 @@ u {
   }
   
  #box3{
-  border:1px solid grey;
+  border:1px solid rgb(184, 182, 182);
   font-size: 12px;
   height: 1610px;
   margin-top: 10px;
@@ -107,8 +108,8 @@ u {
   width: 100%;
  }
  #side{
-  border:1px solid grey;
-  height: 700px;
+  border:1px solid rgb(184, 182, 182);
+  height: 800px;
   margin-top: 10px;
       font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
       border-radius: 5px;
@@ -130,13 +131,26 @@ u {
     height: fit-content;
   
  }
- #footer{
-  border: 1px solid red;
-  width: 800px;
-  height: 50px;
-  color: #363636;
-  font-size: 11px;
-  margin-right: 1500px;
-  
-
+ #box1,#box2,#sidebox,#box3{
+  padding-left: 10px;
+  padding-right: 5px;
  }
+ #box1:hover{
+  cursor: pointer;
+ }
+ #box2:hover{
+  cursor: pointer;
+ }
+ #box3:hover{
+  cursor: pointer;
+ }
+ #sidebox:hover{
+  cursor: pointer;
+ }
+  #box3 > h3{
+    color: #000;
+  }
+#sidebox > h3{
+  color: #000;
+}
+ 
