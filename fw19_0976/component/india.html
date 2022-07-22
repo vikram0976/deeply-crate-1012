@@ -3,16 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/nav_css.css">
-    <link rel="stylesheet" href="./style/indexContent.css">
-    <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/left.css">
-    <link rel="stylesheet" href="./style/headerMain.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Check Live Cricket Scores, Match Schedules, News, Cricket Videos Online | ESPNcricinfo.com</title>
-    <link rel="icon" id="titlelogo" type="image/png" href="./image/logo.png">
     <title>Document</title>
     <link rel="stylesheet" href="india.css">
     <style>
@@ -265,127 +257,6 @@
             
         </div>
     </main>
-   
-    <script type="module">               
-        import ad_image_arr from './images/right_add/image.js'
-        var right_bottom_array=['Keep up wiht experts','On this day: Salim malik is born',
-        'Queto unqueto: who is saying what?','The greatest ipl score 2008-2020','Santanao :I watch a lot of ventnor I thought it would br a crack',
-        'Who played the most cricket in pandamic year','The tendulkar innings Tamim iqbal wishes ','The top 20 ball of this centuries',
-        'Bangladeshis legency of left arm spin','Record index <br/>Most run most wicket and lot more']
-       
-       right_bottom_array.forEach((ele,index)=>{
-               var right_ad=document.getElementById('right_ad')
-               var a=document.createElement('div')
-           a.setAttribute('class','right')
-           a.innerHTML=`
-           <img id="right_img" src=${'/images/right_add/'+ad_image_arr[index]} alt="" srcset="" style="height: 80%; width:100%;">
-            <p id="right_p">${right_bottom_array[index]}</p>
-           `
-           right_ad.append(a)
 
-               
-           })
-           var t201=document.getElementById('t201')
-           var test=document.getElementById('test')
-           test.setAttribute('id','right_btn')
-           var odi=document.getElementById('odi')
-           odi.addEventListener('click',function(){
-               odi.setAttribute('id','right_btn')
-               test.removeAttribute('id')
-               var a=document.getElementById('click_btn')
-               a.innerHTML=""
-               a.innerHTML=`               <div class="right_upper345">
-                    <div class="right_upper_img">
-                        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/304200/304201.png" alt="" srcset="" style="height: 70px; width: 70px;border-radius: 50%;">
-                    </div>
-                    <div class="right_upper_text">
-                        <div>
-                            <h5 style="margin: 5px; height: 20px;">Hardik Pandya <a href="">lbh</a></h5>
-                        </div>
-                        <div style="height: 50%;  text-align: center;">   
-                            <h1 style="float: left; margin-top: -5px;">310</h1>
-                            <p class="color_gr" style="float: right; margin-top: -5px;">Innings: 6<br/>Averahe: 62.44</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right_upper345">
-                    <div class="right_upper_img">
-                        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/289000/289002.1.jpg" alt="" srcset="" style="height: 70px; width: 70px;border-radius: 50%;">
-                    </div>
-                    <div class="right_upper_text">
-                        <div>
-                            <h5 style="margin: 5px; height: 20px;">Virat Kohli <a href="">rbh</a></h5>
-                        </div>
-                        <div style="height: 50%;  text-align: center;">   
-                            <h1 style="float: left; margin-top: -5px;">302</h1>
-                            <p class="color_gr" style="float: right; margin-top: -5px;">Innings: 6<br/>Average: 50.33</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right_upper345">
-                     <div class="right_upper_img">
-                        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/302300/302373.jpg" alt="" srcset="" style="height: 70px; width: 70px;border-radius: 50%;">
-                    </div>
-                    <div class="right_upper_text">
-                        <div>
-                            <h5 style="margin: 5px; height: 20px;">Shikhar Dhawan <a href="">rbh</a></h5>
-                        </div>
-                        <div style="height: 50%; text-align: center;">   
-                            <h1 style="float: left; margin-top: -5px;">289</h1>
-                            <p class="color_gr" style="float: right; margin-top: -5px;">Innings: 6<br/>Average: 48.16</p>
-                        </div>
-                    </div>
-
-                </div>
-`
-           })
-           t201.addEventListener('click',function(){
-               t201.setAttribute('id','right_btn')
-               odi.removeAttribute('id')
-           })
-           var features=document.getElementById('features')
-           features.setAttribute('id','left_btn')
-           features.addEventListener('click',function(){
-               result.removeAttribute('id')
-               features.setAttribute('id','left_btn')
-           })
-           var result=document.getElementById('result')
-           result.addEventListener('click',function(){
-               result.setAttribute('id','left_btn')
-               features.removeAttribute('id')
-           })
-         
-        for(var i=1;i<30;i++){
-            fetch(`https://www.espncricinfo.com/ci/content/story/data/index.json?;type=7;page=${i}`)
-        .then(res=>{
-            return res.json()
-        })
-        .then(res=>{
-            res.forEach(element => {
-               var head=element.headline
-               if(head.includes('BCCI')){
-                  var div=document.getElementById('middle')
-                  var div1=document.createElement('div')
-                  div1.innerHTML=`
-                  <div id="middle_lower">
-                <div class="middle_lower_left"><img style='border-radius: 5%;' height='100%' width='100%' src="${element.image_path}" alt=""></div>
-                <div class="middle_lower_right"><h2 style='margin-top:-10px;'>${element.headline}</h2>
-                <p style='margin-top:-20px;'>${element.summary}</p></div>
-            </div> 
-                  `
-                  div.append(div1)
-               }
-               
-            });
-            
-        })
-        
-        }
-    </script>
-    <script type="module" src="./main.js"></script>
-     <!-- <script src="./javaScript/newContect.js"></script>
-     <script src="./javaScript/showcard.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </body>
 </html>
