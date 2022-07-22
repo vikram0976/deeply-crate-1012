@@ -9,9 +9,25 @@
 </head>
 <body>
 <div id="container2">
-    <div id="ad1">
+    <div class="slideshow-container">
+    <div class="ad1 fade">
         <img src="https://tpc.googlesyndication.com/simgad/1109895060170314314?" alt="ad">
+        
     </div>
+    <div class="ad1 fade">
+        <img src="https://tpc.googlesyndication.com/simgad/10994949654465411539?" alt="">
+        </div>
+        <div class="ad1 fade">
+            <img src="https://tpc.googlesyndication.com/simgad/10926761020657163993?" alt="">
+            </div>
+        </div>
+        
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
     <a  id="link"
        href="https://www.espncricinfo.com/video/ehantharajah-ben-stokes-odi-retirement-a-seismic-turn-of-events-1325316"> 
     <div id="video1">
@@ -24,7 +40,9 @@
        
         <div id="img11">
         <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1120/esci/media/motion/2022/0718/dm_220718_INET_CRIC_Analysis_Stokes_ODI_retirement_a_seismic_turn_of_events_Ehantharajah_20220718_GLOBAL/dm_220718_INET_CRIC_Analysis_Stokes_ODI_retirement_a_seismic_turn_of_events_Ehantharajah_20220718_GLOBAL.jpg" alt="">
-        </div>
+       
+    </div>
+   
     </div></a>
     <div id="box11">
         <h1>Featured videos</h1>
@@ -207,9 +225,7 @@
                 </div>
               <div id="box31">
                 <img src="https://tpc.googlesyndication.com/simgad/1813913120730998978?" alt="">
-              </div>
-       
-                
+              </div>   
             </div>
         </div>
         
@@ -222,3 +238,24 @@
      </div>
 </body>
 </html>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("ad1");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); 
+    }
+    </script>
