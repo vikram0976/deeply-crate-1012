@@ -13,6 +13,11 @@
         <div id="img">
             
         </div>
+        <div id="div">
+            <div>Live</div>
+            <div>Upcoming</div>
+            <div>Result</div>
+        </div>
         <div id="container">
             <div>
                 <div>TOP EVENTS</div>
@@ -178,41 +183,52 @@
             img.append(image)
             i++;
         },2000)
-        
+        const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '221a1c630cmsh413a3975f636b48p199ddcjsnc5aff3a30041',
+		'X-RapidAPI-Host': 'unofficial-cricbuzz.p.rapidapi.com'
+	}
+}; 
 
-fetch("https://api.cricapi.com/v1/cricScore?apikey=380e0a2c-8f3c-4907-88a1-d2a1e5bad62f")
-.then(response => response.json())
-.then(response => append(response.data))
-.catch(err => console.error(err));
+        fetch('https://unofficial-cricbuzz.p.rapidapi.com/matches/list?matchState=recent', options)
+	.then(response => response.json())
+	.then(response => append(response.typeMatches[0].seriesAdWrapper[7].seriesMatches.matches))
 function append(data){
     console.log(data);
     
-    data.forEach(function(ele,index){
+    data.forEach(function(ele){
             
-            
+            console.log(ele.seriesName)
             let section=document.querySelector("#box1")
             let div=document.createElement("div")
-            let h=document.createElement("h4")
-            h.innerText="ele.seriesAdWrapper.seriesName"
+            let p1=document.createElement("p")
+            p1.innerText="18-june-2021"
+            let p2=document.createElement("p")
+            p2.innerText=ele.matchInfo.seriesName
             
     
-            let h1=document.createElement("h3")
-            h1.innerText=ele.t1
-            let h2=document.createElement("h3")
-            h2.innerText=ele.t2
-            let p1=document.createElement("p")
-            p1.innerText=8978
-            let p2=document.createElement("p")
-            p2.innerText=123
+            let h1=document.createElement("h4")
+            h1.innerText=ele.matchInfo.team1.teamName
+            let img=document.createElement("img")
+            img.src="https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_96x96.png"
             let d=document.createElement("div")
             
+            let h2=document.createElement("h4")
+            h2.innerText=ele.matchInfo.team2.teamName
+            let img2=document.createElement("img")
+            img2.src="https://img1.hscicdn.com/image/upload/f_auto,t_s_100/lsci/db/PICTURES/CMS/313100/313128.logo.png"
+            let d2=document.createElement("div")
     
             let p3=document.createElement("p")
-            //p3.innerText="dsfaerfeaefr"
-            div.append(h,d,p3)
+            p3.innerText=ele.matchInfo.status
+            div.append(p1,p2,d,d2,p3)
             section.append(div)
-            d.append(h1,p1,h2,p2)
-            d.setAttribute("id","box")
+            div.setAttribute("id","main")
+            d.append(img,h1)
+            d2.append(img2,h2)
+            d.setAttribute("id","d1")
+            d2.setAttribute("id","d2")
         })
     
         
