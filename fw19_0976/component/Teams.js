@@ -68,4 +68,3 @@ data1.forEach(function(elem){
     div1.append(img,p);
     form1.append(div1);
 })
-
