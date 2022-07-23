@@ -1,0 +1,88 @@
+#container{
+    
+    height: 600px;
+    width: auto;
+    display: flex;
+}
+#box1,#box2{
+    
+    
+    
+    height: 100%;
+    
+}
+#box1{
+    width: 40%;
+}
+#mincontainer{
+ 
+ height: 90%;
+ width: 90%;
+padding-right: 20px;
+margin: auto;
+
+}
+#img{
+    
+    height: auto;
+    width: 30%;
+    
+    margin: auto;
+    margin-top: 90px;
+}
+img{
+    height: 90%;
+    width: 90%;
+}
+#box2 img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+#email,#mobile,#sign,#h3{
+    
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+#email{
+    background: transparent;
+    border: solid 2px #FF4333;
+    border-right: solid 2px #FF4333;
+    color: #FF4333;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: inherit;
+    padding: 10px 10px;
+    font-size: 19px;
+    line-height: 22px;
+    margin-right: 20px;
+    
+    
+}
+ #email:hover{
+    background-color: #FF4333;
+    color: #fff;
+}
+#mobile{
+    background: #5217b0;
+    color: #fff;
+    border-radius: 4px;
+    font-family: inherit;
+    padding: 10px 10px;
+    font-size: 19px;
+    line-height: 22px;
+    cursor: pointer;
+}
+#sign{
+    color: #8A8EB3;
+
+}
+ #sign a{
+    color: #FF4333;
+    cursor: pointer;
+ }   
+

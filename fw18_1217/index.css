@@ -135,6 +135,8 @@ u {
   #sidebox{    border:1px solid rgb(184, 182, 182);
       height: 700px;
 
+      width: 100%;
+
       border-radius: 5px;
       box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
       
