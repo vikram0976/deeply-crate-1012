@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scorcesHome.css">
-    <title>Document</title>
+    <title>Live Scores</title>
 </head>
 <body>
     <header></header>
@@ -165,8 +165,12 @@
     </footer>
 </body>
 </html>
-<script>
-    
+<script src="../component/navbar.js" type="module"></script>  
+
+<script type="module">
+    import navbar from "../component/navbar.js";
+    let nav=document.getElementById("nav");
+    nav.innerHTML=navbar();
     let arr=[
         {img:"https://tpc.googlesyndication.com/simgad/10926761020657163993?"},
         {img:"https://tpc.googlesyndication.com/simgad/10994949654465411539?"}
@@ -211,13 +215,13 @@ function append(data){
             let h1=document.createElement("h4")
             h1.innerText=ele.matchInfo.team1.teamName
             let img=document.createElement("img")
-            img.src="https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_96x96.png"
+            img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVwiI1i1kK8ZK6hYjGwv3GqWTnooqp33pDVA&usqp=CAU"
             let d=document.createElement("div")
             
             let h2=document.createElement("h4")
             h2.innerText=ele.matchInfo.team2.teamName
             let img2=document.createElement("img")
-            img2.src="https://img1.hscicdn.com/image/upload/f_auto,t_s_100/lsci/db/PICTURES/CMS/313100/313128.logo.png"
+            img2.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVwiI1i1kK8ZK6hYjGwv3GqWTnooqp33pDVA&usqp=CAU"
             let d2=document.createElement("div")
     
             let p3=document.createElement("p")
