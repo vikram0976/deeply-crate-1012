@@ -6,11 +6,525 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teams</title>
     <link rel="stylesheet" href="Teams.css">
+    <!-- <link rel="stylesheet" href="../../styles/navbar.css"> -->
+    <style>
+      
+        /* #container{
+            border: 1px solid blue;
+        } */
+        *{
+    font-family: BentonSans,Arial,Noto Sans,sans-serif;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 80%;
+  }
+.navbar-left {
+    overflow: hidden;
+    background-color:#03a9f4;
+    height: 58px;
+    width:100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-right: 72px;
+    padding-left: 110px; 
+    margin-left: -25px;
+  }
+  
+  
+  .navbar-left img {
+    padding-top: 13px;
+    width:150px;
+    height:20px;
+  }
+  .navbar-left img:hover{
+    cursor: pointer;
+  }
+  
+  .dropdown {
+   
+    float: left;
+    overflow: hidden;
+    
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 20px;
+  }
+  .dropdown .dropbtn1 {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 20px;
+  }
+  .dropdown .dropbtn2 {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  
+  .dropdown:hover .dropbtn,.dropdown:hover .dropbtn1,.dropdown:hover .dropbtn2,.dropdown:hover .dropbtn3 {
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    width: 250px;
+    height:300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    line-height: 25px;
+    margin-top: 10px;
+    
+  }
+  
+  .dropdown-content::before{
+    
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 20%;
+        transform: translateX(-50%);
+        border: 15px solid;
+        border-color: transparent transparent #fff transparent;
+        z-index: 1;
+  }
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color:white;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    line-height: 25px;
+    margin-top: 9px;
+  }
+  .dropdown-content2 {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color:white;
+    width: 550px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    line-height: 25px;
+    margin-top: 9px;
+  }
+  .dropdown-content2>div{
+    display: none;
+   
+  }
+  .dropdown-content3 {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color:white;
+    width: 550px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    line-height: 25px;
+    margin-top: 2px;
+    margin-left: -350px;
+  }
+  .dropdown-content3>div{
+    display: none;
+   
+  }
+  .dropdown-content1::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 20%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: transparent transparent #fff transparent;
+    z-index: 1;
+  }
+  .dropdown-content2>div::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 10%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: transparent transparent #fff transparent;
+    z-index: 1;
+  }
+  .dropdown-content3>div::before{
+    content: "";
+    position: absolute;
+    top: -32px;
+    left: 75%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: transparent transparent #fff transparent;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    font-size: 18px;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content1 a {
+    font-size: 18px;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content2 a {
+    font-size: 18px;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content3 a {
+    font-size: 18px;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown-content1 a:hover {
+    background-color: #ddd;
+  }
+  .dropdown-content2>div a:hover {
+    background-color: #ddd;
+  }
+  .dropdown-content3>div a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropdown-content1 {
+    display: block;
+  }
+  .dropdown:hover .dropdown-content2>div {
+    display: block;
+  }
+  .dropdown:hover .dropdown-content3>div {
+    display: block;
+  }
+  .navbar-right{
+    display:flex;
+    width:420px;
+    justify-content: space-between;
+   
+    height:30px;
+}
+.navbar-right p {
+    color: white;
+    font-size: 17px;
+    
+}
+.navbar-right p:hover {
+       cursor: pointer;
+      
+}
+  .fantasy a{
+    display:flex;
+   
+  }
+ 
+  .navbar-right img{
+    width: 60px;
+    height: 40px;
+    margin-top: -2px;
+  }
+  .fantasy a>img{
+    margin-top: 5px;
+    height:20px;
+    width:20px;
+  }
+  .dropdown .dropbtn3 {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 20px;
+    background-color: inherit;
+    font-family: inherit;
+   margin-top: -3px;
+    font-size: 20px;
+  }
+  .navbar-right{
+   
+    height: 40px;  
+    
+}
+#night{
+    width:30px;
+    height:80px;
+   margin-right: 20px;
+}
+#night:hover{
+    cursor: pointer;
+}
+#matrix{
+    margin-top: 10px;
+    color: #fff;
+}
+#matrix:hover{
+    cursor: pointer;
+}
+
+    </style>
 </head>
 <body>
+    <div id="navbar">
+        <div class="navbar-left" id="navbar div">
+            <div>
+        <img src="https://wassets.hscicdn.com/static/images/logo.png"/>
+        </div>
+        <div>
+            <div class="dropdown">
+              <button class="dropbtn">Live Scores 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Live Scores Home</a>
+                <a href="#">Week view</a>
+                <a href="#">Month view</a>
+                <a href="#">Season view</a>
+                <a href="#">International calendar</a>
+                <a href="#">Desktop Scoreboard</a>
+              </div>
+            </div> 
+            <div class="dropdown">
+              <button class="dropbtn2">Series
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content2">
+                <div>
+                <a href="#">West Indies v India</a>
+                <a href="#">England v South Africa</a>
+                <a href="#">Ireland v New Zealand</a>
+                <a href="#">Scotland v New Zealand</a>
+                <a href="#">SA-W in England</a>
+                <a href="#">County Div1</a>
+                <a href="#">Test Championship</a>
+                <a href="#">CWC Super League</a>
+                <a href="#">-Archives-</a>
+            </div>
+            <div>
+                 <a href="#">TNPL 2022</a>
+                <a href="#">Sri Lanka v Pakistan</a>
+                <a href="#">Zimbabwe v Bangladesh</a>
+                <a href="#">IRE Tri-Series(Women)</a>
+                <a href="#">CWG Games(Cricket)</a>
+                <a href="#">County Div2 </a>
+                <a href="#">Women's Championship</a>
+                <a href="#">-Future series-</a>
+                
+            </div>
+          
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn1">Teams
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content2">
+                    <div>
+                  <a href="#">Australia</a>
+                  <a href="#">Bangladesh</a>
+                  <a href="#">England</a>
+                  <a href="#">India</a>
+                  <a href="#">New Zealand</a>
+                  <a href="#">Pakistan</a>
+                  <a href="#">South Africa</a>
+                  <a href="#">Sri Lanka</a>
+                  <a href="#">West Indies</a>
+                  <a href="#">Zimbabwe</a>
+                </div>
+                <div>
+                    <a href="#">Afganistan</a>
+                    <a href="#">Ireland</a>
+                    <a href="#">Namibia</a>
+                    <a href="#">Nepal</a>
+                    <a href="#">Netherlands</a>
+                    <a href="#">Oman</a>
+                    <a href="#">PNG</a>
+                    <a href="#">Scotland</a>
+                    <a href="#">UAE</a>
+                    <a href="#">USA</a>
+                </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn1">News
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content1">
+                  <a href="#">News Home</a>
+                  <a href="#">Covid-19</a>
+                  <a href="#">Ball-tampering</a>
+                  <a href="#">Technology in cricket</a>
+                  <a href="#">Racism</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn1">Features 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content1">
+                  <a href="#">Feature Home</a>
+                  <a href="#">Writers</a>
+                  <a href="#">Photo galleries</a>
+                  <a href="#">The Cricket Monthly</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn2">Videos 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content2">
+                    <div>
+                  <a href="#">Videos Home</a>
+                  <a href="#">T20 Time Out Hindi</a>
+                  <a href="#">Math Day</a>
+                  <a href="#">Fantasy pick</a>
+                  <a href="#">Run Order</a>
+                  <a href="#">25 Question</a>
+                  <a href="#">Interviews</a>
+                  <a href="#">Press Conference</a>
+                </div>
+                <div>
+                    <a href="#">T20 Time Out</a>
+                    <a href="#">Hindi Videos</a>
+                    <a href="#">Haan Ya Naa</a>
+                    <a href="#">Polite Enquiries</a>
+                    <a href="#">Newsroom</a>
+                    <a href="#">News and Analysis</a>
+                    <a href="#">Features</a>
+                    <a href="#">YouTube</a>
+                </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn2">Stats
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content2">
+                    <div>
+                  <a href="#">Stats home</a>
+                  <a href="#">IPL 2022</a>
+                  <a href="#">SuperStats</a>
+                  <a href="#">All records</a>
+                  <a href="#">Grounds</a>
+                </div>
+                <div>
+                    <a href="#">AskCrickinfo</a>
+                    <a href="#">Statsguru</a>
+                    <a href="#">2022 records</a>
+                    <a href="#">Players</a>
+                    <a href="#">Rankings</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="navbar-right">
+           <div class="fantasy" ><a><img  src="https://wassets.hscicdn.com/static/images/fantasy-home.png"/><p>Fantasy</p></a></div>
+           <div class="dropdown">
+            <button class="dropbtn3">Edition IN
+            </button>
+            <div class="dropdown-content3">
+                <div>
+              <a href="#">Africa</a>
+              <a href="#">Bangladesh</a>
+              <a href="#">India-Hindi</a>
+              <a href="#">Pakistan</a>
+              <a href="#">United Kingdom</a>
+              <a href="#">Global</a>
+            </div>
+            <div>
+                <a href="#">Australia</a>
+                <a href="#">India</a>
+                <a href="#">New Zealand</a>
+                <a href="#">Sri Lanka</a>
+                <a href="#">United States</a>
+            </div>
+            </div>
+          </div>
+           <div id="night"><a><img src="./images/moon.JPG" />
+            </a></div>
+           <div><a><p>कA</p></a></div>
+           <div><a><img src="./images/grid.JPG" />
+            </a></div>
+           <div ><a><img src="./images/magnifying.JPG" /></a></div>
+        </div>
+    </div>
+    <!-- <div class="content">
+    <h3>Sticky Navigation Example</h3>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <h3>Sticky Navigation Example</h3>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div> -->
+    </div>
+
+
+    <div id="nav" ></div>
     <div id="container">
-    
-        <!-- <div id="top">
+<!--     
+        <div id="top">
             <ul id="up">
                 <li><a style="background-color: transparent;" href="/home.html"><img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt=""></a></li>
                 <li><a href="#">Live Scores</a></li>
@@ -144,14 +658,14 @@
     </div>
     </div> -->
 
-    <div id="series">
-        <div>
+    <!-- <div id="series"> -->
+        <!-- <div>
         <p>Current Matches</p>
         <p>Current & Future Series</p>
         <p>Matches By Day</p>
         <p>Teams</p>
         <p>Series Archive</p>
-        </div>
+        </div> -->
         
     </div>
     <div id="body">
@@ -216,7 +730,12 @@
     
 </body>
 </html>
-<script src="Teams.js"></script>
+<script src="Teams.js" type="module"></script>
+
+
+
+
+
 
 
 <!-- <script src="Teams.js">

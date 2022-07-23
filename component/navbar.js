@@ -184,13 +184,13 @@ let navbar=()=>{
             </div>
             </div>
           </div>
-           <div id="night"><a><img src="../images/moon.JPG" />
+           <div id="night"><a><img src="../../images/moon.JPG" />
             </a></div>
            <div><a><p>कA</p></a></div>
-           <div><a><img src="../images/grid.JPG" />
+           <div><a><img src="../../images/grid.JPG" />
            
             </a></div>
-           <div ><a><img src="../images/magnifying.JPG" /></a></div>
+           <div ><a><img src="../../images/magnifying.JPG" /></a></div>
         </div>
     </div>
 

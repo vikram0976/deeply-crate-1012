@@ -1,3 +1,10 @@
+
+  // import navbar from "../../component/navbar.js";
+  //   console.log(navbar());
+  // document.getElementById("nav").innerHTML = navbar();
+  
+
+
 let data=[{flag:"https://www.cricbuzz.com/a/img/v1/72x54/i1/c172115/india.jpg",name:"India"},
 {flag:"https://www.cricbuzz.com/a/img/v1/72x54/i1/c172141/ireland.jpg",name:"Ireland"},
 {flag:"https://www.cricbuzz.com/a/img/v1/72x54/i1/c172116/pakistan.jpg",name:"Pakistan"},

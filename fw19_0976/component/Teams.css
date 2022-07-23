@@ -46,10 +46,11 @@ font-size: 15px;
 width:80%;
 margin: auto;
 border-bottom: 1px solid gainsboro;
-height: 50px;
+height: 0px;
 display: flex;
 align-items: center;
 background-color:#FFFFFF;
+margin: 100px;
 }
 #series > div{
 display: flex;
@@ -67,7 +68,6 @@ font-size: 16px;
 #body > #first{
     width: 100%;
     margin-top: -20px;
-
 }
 
 #first > h2{
@@ -82,20 +82,20 @@ font-size: 16px;
     font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* 
 #series > div > p{
   
   padding: 12px;
   
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
-#series > div > p:hover{
+/* #series > div > p:hover{
     cursor: pointer;
     color: green;
     font-weight: bold;
     border-bottom: 5px solid green;
-  }
+  } */
 #first > div {
     margin-left: 30px;
     display: grid;
