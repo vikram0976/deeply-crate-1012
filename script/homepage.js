@@ -132,7 +132,7 @@ append2.forEach(el=>{
     document.getElementById('divmatchscore').append(div)
 })
 
-fetch(`https://newsapi.org/v2/everything?q=cricket&from=2022-06-22&sortBy=publishedAt&apiKey=443ffdd0373647a9a6d6ab45b37cc485`)
+fetch(`https://newsapi.org/v2/everything?q=cricket&from=2022-06-23&sortBy=publishedAt&apiKey=869e479d1c344a3783cf8de1c81ffa98`)
 .then((res)=>{
     return res.json();
 })
