@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         #container{
-            border: 1px solid red;
+            /* border: 1px solid red; */
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: auto;
@@ -20,16 +20,29 @@
         }
         img{
             width:100%;
-            height:550px;
-            padding: 10px;
+            height:350px;
+            padding: 15px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
         h3{
-            font-size: 26px;
+            font-size: 22px;
 
         }
         p{
-            font-size: 24px;
+            font-size: 18px;
+            font-style: robotic;
             
+        }
+        #para{
+            /* height: 200px; */
+            /* border: 1px solid red; */
+            height: 135px;
+
+        }
+        #main{
+            /* border: 1px solid blue; */
+            height: 590px;
         }
     </style>
 </head>
@@ -54,7 +67,7 @@
      
     let res = await fetch(url);
     let data = await res.json();
-    console.log(data)
+    // console.log(data)
     append(data.articles)
 };
 getData()
@@ -70,19 +83,28 @@ getData()
 
         let img = document.createElement("img");
         img.src = el.urlToImage
-        // let div1 = document.createElement("div")
+        // img.style.height="100px"
+        let div1 = document.createElement("div")
+        div1.setAttribute("id","img")
+        div1.append(img)
+        let div2 = document.createElement("div")
+        div2.setAttribute("id","para")
+        let div3 = document.createElement("div")
+        div3.setAttribute("id","main")
+
+
 
         let h3 = document.createElement("h3")
         h3.innerText = el.title
 
-        let h2 = document.createElement("p");
-        h2.innerText = el.description;
-        let h1 = document.createElement("p");
-        h1.innerText = el.content;
+        let p = document.createElement("p");
+        p.innerText = el.description;
+        div2.append(h3,p)
+        div3.append(div1,div2)
         
         let div = document.createElement("div")
         // div1.append(img)
-        div.append(img,h3,h2,h1)
+        div.append(div3)
         contt.append(div);        
     })  
 };
