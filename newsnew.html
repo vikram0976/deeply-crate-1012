@@ -1,59 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-          <div id="container"></div>
-    
-</body>
-</html>
-<script>
-    // fetch("https://newsapi.org/v2/everything?q=tesla&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d")
-	// .then(result => result.json())
-	// .then(result => {
-	// 	console.log("We have the result",result);
-	// })
-	// .catch(err => {
-	// 	console.log("An error occured. Please check your code",err);
-	// });
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <style>
+      #container {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 10px;
+        /* margin: auto; */
+        margin-top: 15px;
+        margin-right: 10px;
+        justify-content: center;
 
-    let getData = async function(query) {
-    let url = "https://newsapi.org/v2/everything?q=cricket&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d"
-     
+        width: 98%;
+
+        width: 95%;
+
+      }
+      #container > div > img {
+        width: 100%;
+        height: 350px;
+        padding: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      h3 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 18px;
+        font-style: robotic;
+      }
+      #para {
+        /* height: 200px; */
+        /* border: 1px solid red; */
+        height: 135px;
+      }
+      #main {
+        /* border: 1px solid blue; */
+        height: 590px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div id="container"></div>
+  </body>
+</html>
+<script src="component/navbar.js" type="module"></script>
+<script type="module">
+  import navbar from "./component/navbar.js";
+  //   console.log(navbar());
+  document.getElementById("nav").innerHTML = navbar();
+  // fetch("https://newsapi.org/v2/everything?q=tesla&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d")
+  // .then(result => result.json())
+  // .then(result => {
+  // 	console.log("We have the result",result);
+  // })
+  // .catch(err => {
+  // 	console.log("An error occured. Please check your code",err);
+  // });
+
+  let getData = async function (query) {
+    // let url = "https://newsapi.org/v2/everything?q=cricket&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d"
+    let url =
+      "https://newsapi.org/v2/everything?q=cricket&from=2022-06-22&sortBy=publishedAt&apiKey=443ffdd0373647a9a6d6ab45b37cc485";
+    // let url =
+      "https://newsapi.org/v2/everything?q=cricket&from=2022-06-22&sortBy=publishedAt&apiKey=443ffdd0373647a9a6d6ab45b37cc485";
+
+
+      // thrird api//
+    //   let url ="https://newsapi.org/v2/everything?q=cricket&from=2022-06-23&sortBy=publishedAt&apiKey=869e479d1c344a3783cf8de1c81ffa98";
+
+
+
     let res = await fetch(url);
     let data = await res.json();
-    console.log(data)
-    append(data.articles)
-};
-getData()
+    console.log(data);
+    append(data.articles);
+  };
+  getData();
 
-
-   function append(data){
-    let container = document.getElementById("container")
+  function append(data) {
     // container.innerHTML = null;
 
     data.forEach((el) => {
+      console.log(el);
+      let contt = document.getElementById("container");
 
-        let img = document.createElement("img");
-        img.src = el.urlToImage
+      let img = document.createElement("img");
+      img.src = el.urlToImage;
+      // let div1 = document.createElement("div")
 
-        let h3 = document.createElement("h3")
-        h3.innerText = el.description
+      let h3 = document.createElement("h3");
+      h3.innerText = el.title;
 
-        let h2 = document.createElement("h2");
-        h2.innerText = el.content
-        let h1 = document.createElement("h1");
-        h1.innerText = el.title
-        
-        let div = document.createElement("div")
-        div.append(img,h3,h2,h1)
-        container.append(div);        
-    })  
-};
+      let h2 = document.createElement("p");
+      h2.innerText = el.description;
 
 
+      let div = document.createElement("div");
+      // div1.append(img)
+      div.append(img, h3, h2);
+      contt.append(div);
+    });
+  }
+
+</script>
 </script>

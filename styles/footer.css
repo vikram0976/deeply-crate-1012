@@ -1,0 +1,76 @@
+#footers{
+   
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-evenly;
+    width:90%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+
+#footer div a{
+    text-decoration: none;
+}
+
+#footer div a p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#footer div h1{
+    color: #404c55 ;
+    font-size: 25px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading{
+    height: 60px;
+    border-bottom: 1px solid  #cfcfd6ce ;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 3px;
+    background-color:#edeef0 ;
+    display: flex;
+    margin-right: -8px;
+    margin-bottom: -5px;
+  }
+
+  #inner_left-footer{
+    display: flex;
+    margin-left: 80px;
+  }
+  #inner_left-footer div{
+   
+    height: 20px;
+    margin-top: 30px;
+    
+  }
+  #inner_left-footer div>p{
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .span{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left:15px;
+    margin-right: 15px;
+  }
+  #left-footer>div+div{
+    width:80px;
+    margin-left: 75px;
+    font-size: 20px;
+    line-height: -5px;
+  }
+  #right-footer{
+    width:420px;
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+  #right-footer a p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  

@@ -146,30 +146,18 @@ overflow: hidden;
    font-size:9px ;
    margin-top: 10PX;
 }
-.slideshow-container{
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
+
 .ad1{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 300px;
+   
     margin-top: 20px;
 }
 .ad1>img{
     width: 100%;
     height: 100%;
 }
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
+
 #writers{
     margin-top: 20px;
 
@@ -410,42 +398,22 @@ margin-left: 10px;
 margin-top: 15px;
 color: gray;
 }
-.slideshow-container12{
-    position: relative;
+
+.ad15{
     width: 90%;
     height: 300px;
     margin: auto;
     margin-top: 10px;
 
-}
-.ad15{
-    width: 100%;
-    height: 100%;
-    position: absolute;
     
 }
 .ad15>img{
     width: 100%;
     height: 100%;
 }
-.dot1 {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    margin-top: 10px;
-    margin-bottom: 20px;
- 
-  
-  }
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-.active1 {
-    background-color: #717171;
+
+
+  #nav{
+    position: sticky;
+    top: 0;
   }

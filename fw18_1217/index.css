@@ -120,6 +120,7 @@ u {
   }
  
   #box1,#box2,#sidebox{
+    box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
     border:1px solid rgb(184, 182, 182);
      width: 50%;
       font-size: 12px;
@@ -129,22 +130,25 @@ u {
       line-height: 10px;
       background: white;
       
+      
   }
-  #sidebox{
-    border:1px solid rgb(184, 182, 182);
+  #sidebox{    border:1px solid rgb(184, 182, 182);
       height: 700px;
+
       border-radius: 5px;
+      box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
       
   }
   
  #box3{
   border:1px solid rgb(184, 182, 182);
-  font-size: 12px;
-  height: 1610px;
+ font-size: 12px;
+  height: 1720px;
   margin-top: 10px;
       font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
       border-radius: 10px;
       background: white;
+      box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
       
  }
  img{
@@ -154,12 +158,17 @@ u {
   width: 100%;
  }
  #side{
-  border:1px solid rgb(184, 182, 182);
+
   height: 800px;
+  width: 99.5%;
+ border:1px solid rgb(184, 182, 182);
+  height: 800px;
+
   margin-top: 10px;
       font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
       border-radius: 5px;
       background: white;
+      box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
  }
  p{
   font-size: 11px;
@@ -176,6 +185,31 @@ u {
     border-radius: 2px;
     height: fit-content;
   
+ }
+
+ .boxes2:hover{
+cursor: pointer;
+ }
+ #main  :hover{
+  cursor: pointer;
+ }
+ #sidebox:hover{
+  cursor: pointer;
+ }
+ #side:hover{
+  cursor: pointer;
+  
+ }
+ #box2,#box3,#sidebox,#box1{
+  padding-left: 10px;
+  padding-right: 5px;
+ }
+ #box3 > h3{
+  color: black;
+  padding-top: 15px;
+ }
+ #sidebox > h3{
+  color: black;
  }
  #box1,#box2,#sidebox,#box3{
   padding-left: 10px;
