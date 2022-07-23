@@ -1,7 +1,8 @@
 import navbar from "../component/navbar.js";
 //import api from "../api/api.js";
+import footer from "../component/footer.js"
 document.getElementById('navbar').innerHTML=navbar();
-
+document.getElementById('footer').innerHTML=footer();
 
 let slider = document.querySelector(".offerSlider");
 let leftArrow = document.querySelector(".leftarrow");
@@ -106,7 +107,7 @@ leftArrow.addEventListener("click",function(){
             div2_2_1_2.append(team2);
             div2_2_1.append(div2_2_1_1,div2_2_1_2);
             let score_2=document.createElement('p');
-            score_2.innerText=el.score[1].r+"/"+el.score[1].w
+            score_2.innerText="("+el.score[1].o+")"+" "+el.score[1].r+"/"+el.score[1].w
             div2_2_2.append(score_2)
             div2_2.append( div2_2_1,div2_2_2)
 
@@ -123,7 +124,7 @@ leftArrow.addEventListener("click",function(){
 
 let append2=(abc.data)
 
-append.forEach(el=>{
+append2.forEach(el=>{
     let div=document.createElement('div');
     let p=document.createElement('a');
     p.innerText=el.teamInfo[0].shortname+" "+"vs"+" "+el.teamInfo[1].shortname;

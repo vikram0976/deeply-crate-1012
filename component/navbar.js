@@ -184,62 +184,13 @@ let navbar=()=>{
             </div>
             </div>
           </div>
-           <div id="night"><a><?xml version="1.0" encoding="iso-8859-1"?>
-            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 512 512" style=" width: 30px; margin-top: 12px;" " xml:space="preserve">
-            <g>
-                <g>
-                    <path d="M506.299,202.547c-3.639-17.047-27.892-17.747-32.447-0.868c-15.349,56.821-67.256,98.886-128.808,98.843
-                        c-73.591-0.013-133.552-59.853-133.565-133.565C211.435,105.4,253.502,53.498,310.32,38.148
-                        c16.83-4.546,16.229-28.799-0.868-32.446C292.245,2.03,274.371-0.001,256,0C114.796,0.031,0.031,114.79,0,256
-                        c0.031,141.21,114.796,255.969,256,256c141.204-0.031,255.969-114.79,256-256C512,237.628,509.97,219.756,506.299,202.547z
-                         M256,478.609C133.31,478.595,33.405,378.807,33.391,256c0.013-117.315,91.732-215.934,211.207-222.03
-                        c-40.315,30.442-66.481,78.606-66.511,132.986c0.031,92.111,74.851,166.925,166.956,166.956
-                        c54.378-0.03,102.544-26.195,132.986-66.511C471.924,387.076,373.12,478.595,256,478.609z"/>
-                </g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            <g>
-            </g>
-            </svg>
+           <div id="night"><a><img src="../images/moon.JPG" />
             </a></div>
            <div><a><p>कA</p></a></div>
-           <div><a><?xml version="1.0" encoding="utf-8"?>
-            <svg style="color:white" id="matrix" width="38px" height="38px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <rect width="16" height="16" id="icon-bound" fill="white" />
-              <path d="M1,1h4v4H1V1z M6,1h4v4H6V1z M11,1h4v4h-4V1z M1,6h4v4H1V6z M6,6h4v4H6V6z M11,6h4v4h-4V6z M1,11h4v4H1V11z M6,11h4v4H6V11z M11,11h4v4h-4V11z" />
-            </svg>
+           <div><a><img src="../images/grid.JPG" />
            
             </a></div>
-           <div ><a><img src="https://www.vhv.rs/dpng/d/443-4434937_white-magnifying-glass-png-magnifying-glass-png-icon.png" /></a></div>
+           <div ><a><img src="../images/magnifying.JPG" /></a></div>
         </div>
     </div>
 
