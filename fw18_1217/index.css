@@ -6,34 +6,81 @@ body {
   background: #c0c0c0 url(https://i.imgci.com/espncricinfo/ciHomepage_page_topbg1.gif) repeat-x top;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color:white;
+/* Navbar container */
+.navbar1 {
     overflow: hidden;
-
+    background-color:white;
+    
+    
   }
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
-      display: block;
+  /* Links inside the navbar */
+  .navbar1 a {
+    display: block;
     float: left;
+    font-size: 13px;
     color:black;
     text-align: center;
     padding: 0px 10px;
     text-decoration: none;
-    font-size: 13px;
     line-height: 50px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    
-    color:#439ec9;
+  /* The dropdown container */
+  .dropdown4 {
+    float: left;
+    overflow: hidden;
   }
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
+  /* Dropdown button */
+  .dropdown4 .dropbtn4 {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0px 10px;
+    background-color: inherit;
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 50px;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar1 a:hover, .dropdown4:hover .dropbtn4 {
+    color: #035BAC;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content4 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content4 a {
+    float: none;
+    color: black;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    line-height: 30px;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content4 a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown4:hover .dropdown-content4 {
+    display: block;
+  }
+  b{
     font-size: 20px;
     color: #439ec9;
   }
@@ -87,7 +134,7 @@ u {
   }
   #sidebox{    border:1px solid rgb(184, 182, 182);
       height: 700px;
-      width: 100%;
+
       border-radius: 5px;
       box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
       
@@ -186,4 +233,6 @@ cursor: pointer;
 #sidebox > h3{
   color: #000;
 }
- 
+ #ft img:hover{
+  cursor: pointer;
+ }
