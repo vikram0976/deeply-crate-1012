@@ -9,15 +9,16 @@
 .navbar-left {
     overflow: hidden;
     background-color:#03a9f4;
-    height: 40px;
-    width:80%;
+    height: 30px;
+    width:90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-right: 72px;
+    padding-left: 110px; 
+    margin-left: -25px;
   }
   
   
@@ -275,7 +276,17 @@
     
 }
 #night{
-    width:40px;
-    height:40px;
+    width:30px;
+    height:80px;
+   
 }
-  
+#night:hover{
+    cursor: pointer;
+}
+#matrix{
+    margin-top: 10px;
+    color: #fff;
+}
+#matrix:hover{
+    cursor: pointer;
+}
