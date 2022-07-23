@@ -1,7 +1,6 @@
 main{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    /* grid-template-columns: repeat(3,1fr); */
     width: 80%;
     margin: auto;
    
@@ -13,16 +12,14 @@ main{
 
 #right{    
     background-color: #fff;
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); 
+    
     border-radius: 30px;
-    /* width: 90%; */
 }
 .right{
     height: 150px ;
     width: auto;
     margin: 20px 10px;
     padding: 20px;
-    /* width: 90%; */
     
 }
 
@@ -31,7 +28,7 @@ border-radius: 30px;
 
 background-color: #fff;
 box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
-/* width: 100%; */
+
 
 
 }
@@ -39,7 +36,6 @@ box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);  
     border-radius: 30px;
-    /* width: 100%; */
 }
 #middle>*{
     margin-top: 20px;
@@ -52,7 +48,7 @@ box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
     margin: 20px 10px;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+    
 }
 .left{
     height: 1000px;
@@ -201,17 +197,35 @@ display: flex;
 .text_img{
     
         position: absolute;
-        top: 70%;
-        left: 50%;
+        top: 87%;
+        left: 54%;
         transform: translate(-50%, -50%);
         color: white;
+        text-align:justify;
 
 }
 .text_img_p{
     position: absolute;
-        top: 85%;
-        left: 50%;
+        top: 95%;
+        left: 48%;
         transform: translate(-50%, -50%);
         color: white;
         
 }
+#img{
+    margin-left: 16%;
+    margin-right: 10%;
+  }
+  footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color:  #edeef0;
+    
+}
+#img{
+    margin-left: 16%;
+    margin-right: 10%;
+    margin-top: 10px;
+  }

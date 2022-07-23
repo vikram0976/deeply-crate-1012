@@ -132,4 +132,33 @@ append2.forEach(el=>{
     document.getElementById('divmatchscore').append(div)
 })
 
-   
+fetch(`https://newsapi.org/v2/everything?q=cricket&from=2022-06-22&sortBy=publishedAt&apiKey=443ffdd0373647a9a6d6ab45b37cc485`)
+.then((res)=>{
+    return res.json();
+})
+.then((res)=>{
+    console.log(res.articles)
+    return append3(res.articles)
+    
+})
+.catch((err)=>{
+    console.log(err);
+})
+
+let append3=(data)=>{
+    data.forEach(el=>{
+        let div=document.createElement('div');
+        div.setAttribute('class','newsmiddlediv')
+        let img=document.createElement('img');
+        img.src=el.urlToImage;
+        let title=document.createElement('h3');
+        title.innerText=el.title;
+        let des=document.createElement('p');
+        des.innerText=el.description;
+        let publish=document.createElement('p');
+        publish.innerText=el.publishedAt;
+        div.append(img,title,des,publish)
+        document.getElementById('middlenews').append(div);
+    })
+}
+
