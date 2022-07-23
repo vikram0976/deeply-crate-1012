@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
     <style>
       #container {
         /* border: 1px solid red; */
@@ -17,7 +18,11 @@
         margin-top: 15px;
         margin-right: 10px;
         justify-content: center;
+<<<<<<< HEAD
+        width: 98%;
+=======
         width: 95%;
+>>>>>>> 8c24523acbcb2db1f76e779f051ac33e5c39c834
       }
       #container > div > img {
         width: 100%;
@@ -67,6 +72,11 @@
 
   let getData = async function (query) {
     // let url = "https://newsapi.org/v2/everything?q=cricket&from=2022-06-21&sortBy=publishedAt&apiKey=7e2c295301af4122aa337f7456a5ce8d"
+<<<<<<< HEAD
+    let url =
+      "https://newsapi.org/v2/everything?q=cricket&from=2022-06-22&sortBy=publishedAt&apiKey=443ffdd0373647a9a6d6ab45b37cc485";
+
+=======
     // let url =
       "https://newsapi.org/v2/everything?q=cricket&from=2022-06-22&sortBy=publishedAt&apiKey=443ffdd0373647a9a6d6ab45b37cc485";
 
@@ -75,6 +85,7 @@
     //   let url ="https://newsapi.org/v2/everything?q=cricket&from=2022-06-23&sortBy=publishedAt&apiKey=869e479d1c344a3783cf8de1c81ffa98";
 
 
+>>>>>>> 8c24523acbcb2db1f76e779f051ac33e5c39c834
     let res = await fetch(url);
     let data = await res.json();
     console.log(data);
@@ -95,14 +106,25 @@
 
       let h3 = document.createElement("h3");
       h3.innerText = el.title;
+<<<<<<< HEAD
 
       let h2 = document.createElement("p");
       h2.innerText = el.description;
 
+=======
+
+      let h2 = document.createElement("p");
+      h2.innerText = el.description;
+
+>>>>>>> 8c24523acbcb2db1f76e779f051ac33e5c39c834
       let div = document.createElement("div");
       // div1.append(img)
       div.append(img, h3, h2);
       contt.append(div);
     });
   }
+<<<<<<< HEAD
 </script>
+=======
+</script>
+>>>>>>> 8c24523acbcb2db1f76e779f051ac33e5c39c834

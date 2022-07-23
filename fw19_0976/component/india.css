@@ -1,6 +1,7 @@
 main{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: repeat(3,1fr); */
     width: 80%;
     margin: auto;
    
@@ -14,12 +15,14 @@ main{
     background-color: #fff;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); 
     border-radius: 30px;
+    /* width: 90%; */
 }
 .right{
     height: 150px ;
     width: auto;
     margin: 20px 10px;
     padding: 20px;
+    /* width: 90%; */
     
 }
 
@@ -28,6 +31,7 @@ border-radius: 30px;
 
 background-color: #fff;
 box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+/* width: 100%; */
 
 
 }
@@ -35,6 +39,7 @@ box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);  
     border-radius: 30px;
+    /* width: 100%; */
 }
 #middle>*{
     margin-top: 20px;
