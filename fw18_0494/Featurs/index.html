@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
+
+    <style>
+        .navbar-right p {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    
+    
+}
+    </style>
 </head>
 <body>
-    <div class="slideshow-container12">
-        <div class="ad15 fade">
-            <img src="https://tpc.googlesyndication.com/simgad/1109895060170314314?" alt="ad">
+    <!-- navbar will be append inside this div -->
+    <div id="nav">
+
+    </div>
+    <!-- <div class="slideshow-container12"> -->
+        <div class="ad15">
+            <img src="https://tpc.googlesyndication.com/simgad/10994949654465411539?" alt="ad">
             
         </div>
-        <div class="ad15 fade">
+        <!-- <div class="ad15 fade">
             <img src="https://tpc.googlesyndication.com/simgad/10994949654465411539?" alt="">
             </div>
             <div class="ad15 fade">
@@ -25,7 +40,7 @@
             <span class="dot1"></span> 
             <span class="dot1"></span> 
             <span class="dot1"></span> 
-          </div>
+          </div> -->
     <div id="container1">
        
         
@@ -231,7 +246,11 @@
             </div>
 
           </div>
-            </div>
+          <div class="ad1">
+            <img src="https://tpc.googlesyndication.com/simgad/1109895060170314314?" alt="ad">
+            
+        </div>
+            <!-- </div>
             <div class="slideshow-container">
                 <div class="ad1 fade">
                     <img src="https://tpc.googlesyndication.com/simgad/1109895060170314314?" alt="ad">
@@ -249,7 +268,7 @@
                 <span class="dot"></span> 
                 <span class="dot"></span> 
                 <span class="dot"></span> 
-              </div>
+              </div> -->
               
             <div id="writers">
                 <h4>Writers</h4>
@@ -445,6 +464,7 @@
 </div>
 </div>
 </div>
+</div>
 <div id="footer1">
     <p id="par">Terms of Use | Privacy Policy | Interest-Based Ads | Addendum to the Global Privacy Policy |
      Feedback</p>
@@ -453,7 +473,15 @@
     </div>
 </body>
 </html>
-<script>
+<script type="module">
+    import navbar from "../../component/navbar.js";
+  //   console.log(navbar());
+  document.getElementById("nav").innerHTML = navbar();
+</script>
+<!-- <script>
+   
+
+
     let slideIndex = 0;
     showSlides();
     
@@ -491,5 +519,5 @@
       slides[slideIndex1-1].style.display = "block";  
       dots[slideIndex1-1].className += " active1";
       setTimeout(showSlides1, 2000); 
-    }
+    } -->
     </script>

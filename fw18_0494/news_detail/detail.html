@@ -6,26 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Do teams benefit when their batters play long innings in T20s?</title>
     <link rel="stylesheet" href="./detail.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
+  <style> 
+   .navbar-right p {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;   
+}
+#nav{
+  position: fixed;
+  top:0;
+ 
+}
+</style>
 </head>
 <body>
-  <div class="slideshow-container12">
-    <div class="ad15 fade">
+  <div id="nav"></div>
+
+    <div class="ad15">
         <img src="https://tpc.googlesyndication.com/simgad/1109895060170314314?" alt="ad">
         
     </div>
-    <div class="ad15 fade">
+    <!-- <div class="ad15 fade">
         <img src="https://tpc.googlesyndication.com/simgad/10994949654465411539?" alt="">
         </div>
         <div class="ad15 fade">
             <img src="https://tpc.googlesyndication.com/simgad/10926761020657163993?" alt="">
-            </div>
-        </div>
+            </div> -->
+ 
                 
-    <div style="text-align:center">
+    <!-- <div style="text-align:center">
         <span class="dot1"></span> 
         <span class="dot1"></span> 
         <span class="dot1"></span> 
-      </div>
+      </div> -->
 
     <div id="container11">
       <div id="box11">
@@ -144,7 +158,12 @@
       </div>
 </body>
 </html>
-<script>
+<script type="module">
+  import navbar from "../../component/navbar.js";
+//   console.log(navbar());
+document.getElementById("nav").innerHTML = navbar();
+</script>
+<!-- <script>
 
   let slideIndex1 = 0;
   showSlides1();
@@ -165,4 +184,4 @@
     dots[slideIndex1-1].className += " active1";
     setTimeout(showSlides1, 2000); 
   }
-  </script>
+  </script> -->
