@@ -9,15 +9,16 @@
 .navbar-left {
     overflow: hidden;
     background-color:#03a9f4;
-    height: 40px;
-    width:80%;
+    height: 30px;
+    width:90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-right: 72px;
+    padding-left: 110px; 
+    margin-left: -25px;
   }
   
   
@@ -245,6 +246,7 @@
     color: white;
     font-size: 17px;
     
+    
 }
 .navbar-right p:hover {
        cursor: pointer;
@@ -254,9 +256,16 @@
     display:flex;
    
   }
+ 
   .navbar-right img{
-    width: 30px;
-    margin-top: 4px;
+    width: 60px;
+    height: 40px;
+    margin-top: -2px;
+  }
+  .fantasy a>img{
+    margin-top: 5px;
+    height:20px;
+    width:20px;
   }
   .dropdown .dropbtn3 {
     font-size: 14px;  
@@ -275,7 +284,17 @@
     
 }
 #night{
-    width:40px;
-    height:40px;
+    width:30px;
+    height:80px;
+   margin-right: 20px;
 }
-  
+#night:hover{
+    cursor: pointer;
+}
+#matrix{
+    margin-top: 10px;
+    color: #fff;
+}
+#matrix:hover{
+    cursor: pointer;
+}

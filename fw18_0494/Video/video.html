@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Videos</title>
     <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
+  <style> 
+   .navbar-right p {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;   
+}</style>
 </head>
 <body>
+    <div id="nav"></div>
 <div id="container2">
-    <div class="slideshow-container">
-    <div class="ad1 fade">
-        <img src="https://tpc.googlesyndication.com/simgad/1109895060170314314?" alt="ad">
+    <!-- <div class="slideshow-container"> -->
+    <div class="ad1">
+        <img src="https://tpc.googlesyndication.com/simgad/10926761020657163993?" alt="ad">
         
     </div>
-    <div class="ad1 fade">
+    <!-- <div class="ad1 fade">
         <img src="https://tpc.googlesyndication.com/simgad/10994949654465411539?" alt="">
         </div>
         <div class="ad1 fade">
@@ -26,7 +34,7 @@
     <span class="dot"></span> 
     <span class="dot"></span> 
     <span class="dot"></span> 
-  </div>
+  </div> -->
   
     <a  id="link"
        href="https://www.espncricinfo.com/video/ehantharajah-ben-stokes-odi-retirement-a-seismic-turn-of-events-1325316"> 
@@ -238,7 +246,12 @@
      </div>
 </body>
 </html>
-<script>
+<script type="module">
+    import navbar from "../../component/navbar.js";
+  //   console.log(navbar());
+  document.getElementById("nav").innerHTML = navbar();
+</script>
+<!-- <script>
     let slideIndex = 0;
     showSlides();
     
@@ -258,4 +271,4 @@
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 2000); 
     }
-    </script>
+    </script> -->
