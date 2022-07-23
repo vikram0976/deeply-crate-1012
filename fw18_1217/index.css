@@ -10,6 +10,7 @@ body {
 .topnav {
     background-color:white;
     overflow: hidden;
+
   }
   
   /* Style the links inside the navigation bar */
@@ -73,6 +74,7 @@ u {
  
   #box1,#box2,#sidebox{
     box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
+    border:1px solid rgb(184, 182, 182);
      width: 50%;
       font-size: 12px;
       font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
@@ -83,8 +85,7 @@ u {
       
       
   }
-  #sidebox{
-     
+  #sidebox{    border:1px solid rgb(184, 182, 182);
       height: 700px;
       width: 100%;
       border-radius: 5px;
@@ -93,8 +94,8 @@ u {
   }
   
  #box3{
-  
-  font-size: 12px;
+  border:1px solid rgb(184, 182, 182);
+ font-size: 12px;
   height: 1720px;
   margin-top: 10px;
       font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
@@ -110,9 +111,12 @@ u {
   width: 100%;
  }
  #side{
-  
+
   height: 800px;
   width: 99.5%;
+ border:1px solid rgb(184, 182, 182);
+  height: 800px;
+
   margin-top: 10px;
       font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
       border-radius: 5px;
@@ -135,6 +139,7 @@ u {
     height: fit-content;
   
  }
+
  .boxes2:hover{
 cursor: pointer;
  }
@@ -159,4 +164,26 @@ cursor: pointer;
  #sidebox > h3{
   color: black;
  }
+ #box1,#box2,#sidebox,#box3{
+  padding-left: 10px;
+  padding-right: 5px;
+ }
+ #box1:hover{
+  cursor: pointer;
+ }
+ #box2:hover{
+  cursor: pointer;
+ }
+ #box3:hover{
+  cursor: pointer;
+ }
+ #sidebox:hover{
+  cursor: pointer;
+ }
+  #box3 > h3{
+    color: #000;
+  }
+#sidebox > h3{
+  color: #000;
+}
  
