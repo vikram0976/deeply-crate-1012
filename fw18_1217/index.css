@@ -134,14 +134,9 @@ u {
   }
   #sidebox{    border:1px solid rgb(184, 182, 182);
       height: 700px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      width: 100%;
->>>>>>> 51e5a8e08d2e89c29e95773a69d8d6e711d81359
-=======
 
->>>>>>> 064c52e61744325363ecb2be14c80ba1dad43664
+      width: 100%;
+
       border-radius: 5px;
       box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
       
