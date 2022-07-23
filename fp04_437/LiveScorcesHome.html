@@ -10,6 +10,9 @@
 <body>
     <header></header>
     <section>
+        <div id="nav">
+
+        </div>
         <div id="img">
             
         </div>
@@ -171,12 +174,13 @@
     import navbar from "../component/navbar.js";
     let nav=document.getElementById("nav");
     nav.innerHTML=navbar();
+    
     let arr=[
         {img:"https://tpc.googlesyndication.com/simgad/10926761020657163993?"},
         {img:"https://tpc.googlesyndication.com/simgad/10994949654465411539?"}
     ]
     let i=0;
-    id=setInterval(function(){
+    let id=setInterval(function(){
             if(i==2){
                 i=0;
             }
