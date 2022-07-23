@@ -1,0 +1,238 @@
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  background: #c0c0c0 url(https://i.imgci.com/espncricinfo/ciHomepage_page_topbg1.gif) repeat-x top;
+}
+
+/* Navbar container */
+.navbar1 {
+    overflow: hidden;
+    background-color:white;
+    
+    
+  }
+  
+  /* Links inside the navbar */
+  .navbar1 a {
+    display: block;
+    float: left;
+    font-size: 13px;
+    color:black;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* The dropdown container */
+  .dropdown4 {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown4 .dropbtn4 {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0px 10px;
+    background-color: inherit;
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 50px;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar1 a:hover, .dropdown4:hover .dropbtn4 {
+    color: #035BAC;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content4 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content4 a {
+    float: none;
+    color: black;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    line-height: 30px;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content4 a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown4:hover .dropdown-content4 {
+    display: block;
+  }
+  b{
+    font-size: 20px;
+    color: #439ec9;
+  }
+  
+  #advt{
+      
+      height: 30%;
+      width: 80%;
+      margin: auto;
+  }
+  #container{
+    display: flex;
+    width :80%;
+    gap:5%;
+    margin:auto;
+    color:#035BAC;
+}
+u {    
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+  color:#035BAC;
+}
+  #main{
+    
+    width:40%;
+  }
+  #boxes2{
+    display:flex;
+    
+  }
+  #main>div{
+    
+    gap:20px;
+  }
+  #main2{
+    display:block;
+  }
+ 
+  #box1,#box2,#sidebox{
+    box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
+    border:1px solid rgb(184, 182, 182);
+     width: 50%;
+      font-size: 12px;
+      font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
+      margin-top: 10px;
+      border-radius: 5px;
+      line-height: 10px;
+      background: white;
+      
+      
+  }
+  #sidebox{    border:1px solid rgb(184, 182, 182);
+      height: 700px;
+
+      border-radius: 5px;
+      box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
+      
+  }
+  
+ #box3{
+  border:1px solid rgb(184, 182, 182);
+ font-size: 12px;
+  height: 1720px;
+  margin-top: 10px;
+      font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
+      border-radius: 10px;
+      background: white;
+      box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
+      
+ }
+ img{
+  margin-top: 10px;
+ }
+ #advt > img{
+  width: 100%;
+ }
+ #side{
+
+  height: 800px;
+  width: 99.5%;
+ border:1px solid rgb(184, 182, 182);
+  height: 800px;
+
+  margin-top: 10px;
+      font-family: Tahoma, Geneva, Arial, "Arial Narrow", Verdana, sans-serif;
+      border-radius: 5px;
+      background: white;
+      box-shadow:  rgba(0, 0, 0, 0.12) 0px -12px 30px;
+ }
+ p{
+  font-size: 11px;
+ }
+ #form{
+  display: flex;
+  width: 50%;
+  height: 20px;
+ }
+ .btn{
+  background-color: #035BAC;
+    color: white;;
+    border: none;
+    border-radius: 2px;
+    height: fit-content;
+  
+ }
+
+ .boxes2:hover{
+cursor: pointer;
+ }
+ #main  :hover{
+  cursor: pointer;
+ }
+ #sidebox:hover{
+  cursor: pointer;
+ }
+ #side:hover{
+  cursor: pointer;
+  
+ }
+ #box2,#box3,#sidebox,#box1{
+  padding-left: 10px;
+  padding-right: 5px;
+ }
+ #box3 > h3{
+  color: black;
+  padding-top: 15px;
+ }
+ #sidebox > h3{
+  color: black;
+ }
+ #box1,#box2,#sidebox,#box3{
+  padding-left: 10px;
+  padding-right: 5px;
+ }
+ #box1:hover{
+  cursor: pointer;
+ }
+ #box2:hover{
+  cursor: pointer;
+ }
+ #box3:hover{
+  cursor: pointer;
+ }
+ #sidebox:hover{
+  cursor: pointer;
+ }
+  #box3 > h3{
+    color: #000;
+  }
+#sidebox > h3{
+  color: #000;
+}
+ #ft img:hover{
+  cursor: pointer;
+ }

@@ -1,0 +1,204 @@
+*{
+
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+#black{
+width: 80%;
+margin: auto;
+height: 50px;
+padding: 7px 0px 7px 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+font-size: 15px;
+background-color:#4A4A4A;
+border-bottom: 9px solid gainsboro;
+
+}
+#black > #Match{
+display: flex;
+width:80%;
+color: white;
+justify-content: space-around;
+}
+#black > #all1{
+height: 40px;
+width: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#black > #Match >p  {
+padding: 10px 0px 8px 0px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ;
+}
+#black > #Match >p:hover  {
+background-color: black;
+cursor: pointer;
+}
+#all1 > select{
+font-size: 15px;
+}
+
+#series{
+width:80%;
+margin: auto;
+border-bottom: 1px solid gainsboro;
+height: 0px;
+display: flex;
+align-items: center;
+background-color:#FFFFFF;
+margin: 100px;
+}
+#series > div{
+display: flex;
+width: 65%;
+justify-content: center;
+align-items: center;
+justify-content: space-evenly;
+font-size: 16px;
+}
+  #body{
+    width: 80%;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+#body > #first{
+    width: 100%;
+    margin-top: -20px;
+}
+
+#first > h2{
+    margin-left: 30px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#second > h2{
+    margin-left: 30px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* 
+#series > div > p{
+  
+  padding: 12px;
+  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* #series > div > p:hover{
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+    border-bottom: 5px solid green;
+  } */
+#first > div {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 30%;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+  #first > div > button{
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 50px;
+    border:1px solid gainsboro;
+    background-color:#CFE0DB;
+  }
+  #first > div > button:hover{
+   cursor: pointer;
+   color: white;
+   background-color: #028062;
+  
+  }
+
+
+  #two{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-color: #FFFFFF;
+  }
+
+   #flags{
+    margin-left: 30px;
+    margin-top: -10px;
+    width:65%;
+    border-right: 2px solid gainsboro;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap:10px
+    
+  }
+  #flags > div{
+    margin-top: 40px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+  }
+  #flags > div > img{
+    width: 90px;
+  }
+  #flags > div > p{
+    margin-left: 10px;
+    font-size: 17px;
+  }
+  #flags > div > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+ #news{
+  width: 35%;
+ }
+  #news > h2{
+    margin-left: 20px;
+    font-size: 20px;
+    color: green;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #news1 > div{
+    margin-left: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+  }
+  #news1 > div > img{
+    width: 100px;
+  }
+  #news1 > div > p{
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  #news1 > div > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #news > button{
+    margin-left: 42%;
+    margin-top: 20px;
+    padding: 7px;
+    font-size: 15px;
+    background-color: #028062;
+    color: white;
+    border: none;
+  }
+  .footer{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  #all{
+    display: flex;
+    justify-content: space-around;
+    /* width: 80%; */
+    background-color: #4A4A4A;
+  }
