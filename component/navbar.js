@@ -11,8 +11,8 @@ let navbar=()=>{
   <body>
       <div id="navbar">
       <div class="navbar-left" id="navbar div">
-          <div>
-      <img src="https://wassets.hscicdn.com/static/images/logo.png"/>
+          <div><a href="./homepage.html">
+          <img src="https://wassets.hscicdn.com/static/images/logo.png"/></a>
       </div>
       <div>
       <div class="dropdown">
@@ -67,7 +67,7 @@ let navbar=()=>{
           <a href="#">Australia</a>
           <a href="#">Bangladesh</a>
           <a href="#">England</a>
-          <a hreF="#">India</a>
+          <a hreF="../fw19_0976/component/india.html">India</a>
           <a href="#">New Zealand</a>
           <a href="#">Pakistan</a>
           <a href="#">South Africa</a>

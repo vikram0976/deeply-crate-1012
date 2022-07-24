@@ -372,7 +372,7 @@
     width:900px;
   }
   .newsmiddlediv>img{
-    width:600px;
+    width:400px;
     margin-top: 50px;
     border-radius: 10px;
   }
@@ -382,7 +382,7 @@
   .newsmiddlediv{
     box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 5px;
-    height:600px;
+    height:700px;
     text-align: center;
     margin-top: 25px;
     margin-left: 35px;
